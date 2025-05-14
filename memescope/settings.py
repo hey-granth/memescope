@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'memes',
     'rest_framework',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -50,6 +51,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+
 ]
 
 ROOT_URLCONF = 'memescope.urls'
@@ -129,3 +132,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 REDDIT_CLIENT_ID = config('REDDIT_CLIENT_ID')
 REDDIT_CLIENT_SECRET = config('REDDIT_CLIENT_SECRET')
 REDDIT_USER_AGENT = config('REDDIT_USER_AGENT')
+
+CORS_ALLOW_ALL_ORIGINS = True  # For development, use this. For production, specify your frontend URL.
