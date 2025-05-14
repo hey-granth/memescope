@@ -12,4 +12,4 @@ class Meme(models.Model):
         return self.upvotes + self.comments
 
     def __str__(self):
-        return self.title
+        return f"{self.title[:50]}... ({self.score()} pts)"

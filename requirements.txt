@@ -38,6 +38,7 @@ praw==7.8.1
 prawcore==2.4.0
 pycparser==2.22
 pyproject-hooks==1.2.0
+python-decouple==3.8
 rapidfuzz==3.13.0
 requests==2.32.3
 requests-toolbelt==1.0.0

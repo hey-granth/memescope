@@ -63,7 +63,8 @@ dependencies = [
     "uv (==0.7.3)",
     "virtualenv (==20.31.2)",
     "websocket-client (==1.8.0)",
-    "zstandard (==0.23.0)"
+    "zstandard (==0.23.0)",
+    "python-decouple (==3.8)"
 ]
 
 
